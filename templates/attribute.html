@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Attribute</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    </head>
+    <style>
+        body{
+    background-image: url('https://awdaz.com/wp-content/uploads/2019/02/warehouse-background.png');
+   background-size: cover;
+   
+}
+        .head-top{
+            width: 100%;
+            height:20%;
+            background-color: #bb8b509a;
+            
+        }
+        h1{
+    font-family: "Audiowide", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    margin-top: 0px; 
+    
+    
+}
+        .sect1{
+            width: 30%;
+            height: 60%;
+            
+            float: left;
+        }.sect2{
+            float: left;
+            background-color: rgba(3, 3, 3, 0.616);
+            width: 40%;
+            height: 60%;
+            color: aliceblue;
+            border-radius: 10px;
+           
+        }.btm-section{
+            float: left;
+            width: 100%;
+            height: 20%;
+            background-color: #bd7400;
+            color: aliceblue;
+        }
+        .btm-left{
+            width: 20%;
+            height: 100%;
+            background-image: url('https://b1362567.smushcdn.com/1362567/wp-content/uploads/2020/09/Writing-scaled.jpg?size=2000x1571&lossy=1&strip=1&webp=1');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             float: left;
+
+        }.btm-right{
+            float: left;
+            width: 80%;
+        }
+        td{
+            color: rgb(255, 255, 255);
+        }
+        .attribute{
+            margin-left: 90px;
+        }
+        .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  height: 37px;
+  width: 100px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  height: 39px;
+  width: 100px;
+}
+td{
+    padding:5px
+}
+h3{
+    color: black;
+}
+input{
+    color: black;
+}
+
+    </style>
+
+
+    <body>
+        <div class="head-top">
+            <h1>Welcome to Inventory</h1>
+            <marquee>
+                <h3>Welcome {{name2}}</h3>
+            </marquee>
+        </div>
+        <div class="sect1"></div>
+        <div class="sect2">
+            <div class="attribute">
+                <h2  style="text-align:left" ;> &emsp;&emsp;Provide the  Details </h2>
+
+<form action="{{ url_for('predict')}} "method="post">
+  <table class="center1">
+    <tr>
+        <td>  Marketing_Type :</td>
+        <td><input type="text" name="MarketingType" placeholder="MarketingType" required="required" /><br></td>
+      </tr>
+    
+      <tr>
+        <td>  New_Release_Flag :</td>
+        <td><input  type="text" name="New_Release_Flag" placeholder="New_Release_Flag" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Price_Reg :</td>
+        <td><input  type="text" name="PriceReg" placeholder="PriceReg" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Release_Year :</td>
+        <td><input  type="text" name="ReleaseYear" placeholder="ReleaseYear" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Item_Count :</td>
+        <td><input  type="text" name="ItemCount" placeholder="ItemCount" required="required" /><br></td>
+      </tr>
+      
+      <tr>
+        <td>  Profit :</td>
+        <td><input  type="text" name="profit" placeholder="profit" required="required" /><br></td>
+      </tr>
+
+    
+
+     
+      
+        
+      
+    
+  </table>
+<br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="submit" class="button button1" >Predict</button>
+
+
+</form>
+            </div>
+        </div>
+        <div class="btm-section">
+            <div class="btm-left"></div>
+            <div class="btm-right">
+                <marquee><br>
+                <p>Inventory may be defined as the material, 
+                    which are either saleable in the market or usable directly or <br>
+                    indirectly in the manufacturing process. It also includes the
+                    items which are ready for making finished <br>goods in some other 
+                    process or by comparing them either by the concern itself 
+                    and/or by <br>outside parties.</p>
+                </marquee>
+            </div>
+        </div>
+
+    </body>
+</html>

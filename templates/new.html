@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input element</h1>
+
+<form action="{{ url_for('predict')}} "method="post">
+  <table class="center1">
+    <tr>
+        <td>  Marketing_Type :</td>
+        <td><input type="text" name="MarketingType" placeholder="MarketingType" required="required" /><br></td>
+      </tr>
+    
+      <tr>
+        <td>  New_Release_Flag :</td>
+        <td><input  type="text" name="New_Release_Flag" placeholder="New_Release_Flag" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Price_Reg :</td>
+        <td><input  type="text" name="PriceReg" placeholder="PriceReg" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Release_Year :</td>
+        <td><input  type="text" name="ReleaseYear" placeholder="ReleaseYear" required="required" /><br></td>
+      </tr>
+
+      <tr>
+        <td>  Item_Count :</td>
+        <td><input  type="text" name="ItemCount" placeholder="ItemCount" required="required" /><br></td>
+      </tr>
+      
+      <tr>
+        <td>  Profit :</td>
+        <td><input  type="text" name="profit" placeholder="profit" required="required" /><br></td>
+      </tr>
+
+    
+
+     
+      
+        
+      
+    
+  </table>
+<br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="submit" class="button button1" >Predict</button>
+
+
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+</body>
+</html>
+
